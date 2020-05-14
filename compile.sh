@@ -25,4 +25,4 @@ javac -d classes -classpath args4j-2.33.jar:annotations-19.0.0.jar:commons-compr
 jar cvfm compressor-0.1.0.jar data/manifest.mf -C classes/ .
 
 # 実行方法は次のコマンドで確認すること．
-# java -jar compress-0.1.0.jar --help 
+# java -jar compressor-0.1.0.jar --help 

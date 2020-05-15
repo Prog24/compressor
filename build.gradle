@@ -1,0 +1,35 @@
+plugins {
+  id 'com.github.johnrengelman.shadow' version '5.1.0'
+  id "application"
+}
+apply plugin : "java"
+
+sourceSets.main.java.srcDirs = ['src']
+
+repositories {
+  google()
+  mavenCentral()
+  jcenter()
+}
+
+dependencies {
+  compile group: 'args4j', name: 'args4j', version: '2.33'
+  compile group: 'org.jetbrains', name: 'annotations', version: '19.0.0'
+  compile group: 'org.apache.commons', name: 'commons-compress', version: '1.20'
+}
+
+jar {
+  manifest {
+    attributes 'Main-Class': 'jp.ac.kyoto_su.ise.compressor.Main'
+  }
+}
+
+shadowJar {
+  manifest {
+    attributes 'Main-Class': 'jp.ac.kyoto_su.ise.compressor.Main'
+  }
+}
+
+application {
+  mainClassName = 'jp.ac.kyoto_su.ise.compressor.Main'
+}

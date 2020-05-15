@@ -11,14 +11,14 @@
   - bzip2 圧縮に利用．
 ```
 
-## コンパイル
+## build
 ```bash
-./compile.sh
+./gradlew build
 ```
 
 ## 使用方法
 ```
-java -jar compressor.jar [OPTIONS] <FILES...>
+java -jar compressor-all.jar [OPTIONS] <FILES...>
 OPTIONS
     -c, --compress <ALGORITHM>    specifies compress algorithm. Default is "gzip".
                                   Available: gzip, and bzip2.

@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/Prog24/compressor/workflows/build/badge.svg)](https://github.com/Prog24/compressor/actions?query=workflow%3Abuild)
+
 # compressor
 引数で与えられたファイルを gzip（bzip2）圧縮を行うプログラム．
 

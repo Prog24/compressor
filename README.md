@@ -11,9 +11,9 @@
   - bzip2 圧縮に利用．
 ```
 
-## コンパイル
+## build
 ```bash
-./compile.sh
+./gradlew build
 ```
 
 ## 使用方法

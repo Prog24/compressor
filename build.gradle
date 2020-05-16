@@ -1,5 +1,4 @@
 plugins {
-  id "application"
   id 'java-library'
 }
 apply plugin : "java"
@@ -23,8 +22,4 @@ jar {
     attributes 'Main-Class': 'jp.ac.kyoto_su.ise.compressor.Main'
   }
   from configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) }
-}
-
-application {
-  mainClassName = 'jp.ac.kyoto_su.ise.compressor.Main'
 }

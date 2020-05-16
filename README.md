@@ -1,4 +1,5 @@
-[![Actions Status](https://github.com/Prog24/compressor/workflows/build/badge.svg)](https://github.com/Prog24/compressor/actions?query=workflow%3Abuild)
+[![Build Status](https://github.com/Prog24/compressor/workflows/build/badge.svg?branch=master)](https://github.com/Prog24/compressor/actions?workflow=build)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://github.com/Prog24/compressor/blob/master/LICENSE)
 
 # compressor
 引数で与えられたファイルを gzip（bzip2）圧縮を行うプログラム．

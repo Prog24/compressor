@@ -4,6 +4,7 @@ plugins {
 apply plugin : "java"
 
 sourceSets.main.java.srcDirs = ['src']
+sourceSets.test.java.srcDirs = ['src/test']
 
 repositories {
   google()
@@ -11,10 +12,16 @@ repositories {
   jcenter()
 }
 
+test {
+    useJUnitPlatform()
+}
+
 dependencies {
   api 'args4j:args4j:2.33'
   implementation 'org.jetbrains:annotations:19.0.0'
   implementation 'org.apache.commons:commons-compress:1.20'
+  implementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+  implementation 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
 }
 
 jar {

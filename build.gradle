@@ -13,7 +13,10 @@ repositories {
 }
 
 test {
-    useJUnitPlatform()
+  useJUnitPlatform()
+  testLogging {
+    events 'standard_out', 'standard_error'
+  }
 }
 
 dependencies {
